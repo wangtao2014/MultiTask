@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28DFD98918D98E06002940EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98818D98E06002940EB /* Foundation.framework */; };
+		28DFD98B18D98E06002940EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98A18D98E06002940EB /* CoreGraphics.framework */; };
+		28DFD98D18D98E06002940EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98C18D98E06002940EB /* UIKit.framework */; };
+		28DFD99318D98E06002940EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28DFD99118D98E06002940EB /* InfoPlist.strings */; };
+		28DFD99518D98E06002940EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD99418D98E06002940EB /* main.m */; };
+		28DFD99918D98E06002940EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD99818D98E06002940EB /* AppDelegate.m */; };
+		28DFD99B18D98E06002940EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DFD99A18D98E06002940EB /* Images.xcassets */; };
+		28DFD9A218D98E06002940EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD9A118D98E06002940EB /* XCTest.framework */; };
+		28DFD9A318D98E06002940EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98818D98E06002940EB /* Foundation.framework */; };
+		28DFD9A418D98E06002940EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98C18D98E06002940EB /* UIKit.framework */; };
+		28DFD9AC18D98E06002940EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28DFD9AA18D98E06002940EB /* InfoPlist.strings */; };
+		28DFD9AE18D98E06002940EB /* MutiableTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD9AD18D98E06002940EB /* MutiableTaskTests.m */; };
+		28DFD9B918D98E15002940EB /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD9B818D98E15002940EB /* ThreadViewController.m */; };
+		28DFD9BC18D98E1F002940EB /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD9BB18D98E1F002940EB /* OperationViewController.m */; };
+		28DFD9BF18D98E2B002940EB /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD9BE18D98E2B002940EB /* GCDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DFD9A518D98E06002940EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DFD97D18D98E06002940EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DFD98418D98E06002940EB;
+			remoteInfo = MutiableTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28DFD98518D98E06002940EB /* MultiTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DFD98818D98E06002940EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28DFD98A18D98E06002940EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28DFD98C18D98E06002940EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28DFD99018D98E06002940EB /* MultiTask-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiTask-Info.plist"; sourceTree = "<group>"; };
+		28DFD99218D98E06002940EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28DFD99418D98E06002940EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28DFD99618D98E06002940EB /* MultiTask-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiTask-Prefix.pch"; sourceTree = "<group>"; };
+		28DFD99718D98E06002940EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28DFD99818D98E06002940EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28DFD99A18D98E06002940EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28DFD9A018D98E06002940EB /* MultiTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DFD9A118D98E06002940EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		28DFD9A918D98E06002940EB /* MultiTaskTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiTaskTests-Info.plist"; sourceTree = "<group>"; };
+		28DFD9AB18D98E06002940EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28DFD9AD18D98E06002940EB /* MutiableTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutiableTaskTests.m; sourceTree = "<group>"; };
+		28DFD9B718D98E15002940EB /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		28DFD9B818D98E15002940EB /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		28DFD9BA18D98E1F002940EB /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
+		28DFD9BB18D98E1F002940EB /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
+		28DFD9BD18D98E2B002940EB /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		28DFD9BE18D98E2B002940EB /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DFD98218D98E06002940EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DFD98B18D98E06002940EB /* CoreGraphics.framework in Frameworks */,
+				28DFD98D18D98E06002940EB /* UIKit.framework in Frameworks */,
+				28DFD98918D98E06002940EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DFD99D18D98E06002940EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DFD9A218D98E06002940EB /* XCTest.framework in Frameworks */,
+				28DFD9A418D98E06002940EB /* UIKit.framework in Frameworks */,
+				28DFD9A318D98E06002940EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28DFD97C18D98E06002940EB = {
+			isa = PBXGroup;
+			children = (
+				28DFD98E18D98E06002940EB /* MultiTask */,
+				28DFD9A718D98E06002940EB /* MultiTaskTests */,
+				28DFD98718D98E06002940EB /* Frameworks */,
+				28DFD98618D98E06002940EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28DFD98618D98E06002940EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DFD98518D98E06002940EB /* MultiTask.app */,
+				28DFD9A018D98E06002940EB /* MultiTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DFD98718D98E06002940EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28DFD98818D98E06002940EB /* Foundation.framework */,
+				28DFD98A18D98E06002940EB /* CoreGraphics.framework */,
+				28DFD98C18D98E06002940EB /* UIKit.framework */,
+				28DFD9A118D98E06002940EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28DFD98E18D98E06002940EB /* MultiTask */ = {
+			isa = PBXGroup;
+			children = (
+				28DFD99718D98E06002940EB /* AppDelegate.h */,
+				28DFD99818D98E06002940EB /* AppDelegate.m */,
+				28DFD99A18D98E06002940EB /* Images.xcassets */,
+				28DFD98F18D98E06002940EB /* Supporting Files */,
+				28DFD9B718D98E15002940EB /* ThreadViewController.h */,
+				28DFD9B818D98E15002940EB /* ThreadViewController.m */,
+				28DFD9BA18D98E1F002940EB /* OperationViewController.h */,
+				28DFD9BB18D98E1F002940EB /* OperationViewController.m */,
+				28DFD9BD18D98E2B002940EB /* GCDViewController.h */,
+				28DFD9BE18D98E2B002940EB /* GCDViewController.m */,
+			);
+			name = MultiTask;
+			path = MutiableTask;
+			sourceTree = "<group>";
+		};
+		28DFD98F18D98E06002940EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28DFD99018D98E06002940EB /* MultiTask-Info.plist */,
+				28DFD99118D98E06002940EB /* InfoPlist.strings */,
+				28DFD99418D98E06002940EB /* main.m */,
+				28DFD99618D98E06002940EB /* MultiTask-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28DFD9A718D98E06002940EB /* MultiTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				28DFD9AD18D98E06002940EB /* MutiableTaskTests.m */,
+				28DFD9A818D98E06002940EB /* Supporting Files */,
+			);
+			name = MultiTaskTests;
+			path = MutiableTaskTests;
+			sourceTree = "<group>";
+		};
+		28DFD9A818D98E06002940EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28DFD9A918D98E06002940EB /* MultiTaskTests-Info.plist */,
+				28DFD9AA18D98E06002940EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28DFD98418D98E06002940EB /* MultiTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DFD9B118D98E07002940EB /* Build configuration list for PBXNativeTarget "MultiTask" */;
+			buildPhases = (
+				28DFD98118D98E06002940EB /* Sources */,
+				28DFD98218D98E06002940EB /* Frameworks */,
+				28DFD98318D98E06002940EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiTask;
+			productName = MutiableTask;
+			productReference = 28DFD98518D98E06002940EB /* MultiTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28DFD99F18D98E06002940EB /* MultiTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DFD9B418D98E07002940EB /* Build configuration list for PBXNativeTarget "MultiTaskTests" */;
+			buildPhases = (
+				28DFD99C18D98E06002940EB /* Sources */,
+				28DFD99D18D98E06002940EB /* Frameworks */,
+				28DFD99E18D98E06002940EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DFD9A618D98E06002940EB /* PBXTargetDependency */,
+			);
+			name = MultiTaskTests;
+			productName = MutiableTaskTests;
+			productReference = 28DFD9A018D98E06002940EB /* MultiTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DFD97D18D98E06002940EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = wangtao;
+				TargetAttributes = {
+					28DFD99F18D98E06002940EB = {
+						TestTargetID = 28DFD98418D98E06002940EB;
+					};
+				};
+			};
+			buildConfigurationList = 28DFD98018D98E06002940EB /* Build configuration list for PBXProject "MultiTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28DFD97C18D98E06002940EB;
+			productRefGroup = 28DFD98618D98E06002940EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DFD98418D98E06002940EB /* MultiTask */,
+				28DFD99F18D98E06002940EB /* MultiTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DFD98318D98E06002940EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DFD99318D98E06002940EB /* InfoPlist.strings in Resources */,
+				28DFD99B18D98E06002940EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DFD99E18D98E06002940EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DFD9AC18D98E06002940EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DFD98118D98E06002940EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DFD9BC18D98E1F002940EB /* OperationViewController.m in Sources */,
+				28DFD9B918D98E15002940EB /* ThreadViewController.m in Sources */,
+				28DFD99918D98E06002940EB /* AppDelegate.m in Sources */,
+				28DFD9BF18D98E2B002940EB /* GCDViewController.m in Sources */,
+				28DFD99518D98E06002940EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DFD99C18D98E06002940EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DFD9AE18D98E06002940EB /* MutiableTaskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28DFD9A618D98E06002940EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DFD98418D98E06002940EB /* MultiTask */;
+			targetProxy = 28DFD9A518D98E06002940EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28DFD99118D98E06002940EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DFD99218D98E06002940EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		28DFD9AA18D98E06002940EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DFD9AB18D98E06002940EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28DFD9AF18D98E07002940EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28DFD9B018D98E07002940EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28DFD9B218D98E07002940EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MutiableTask/MultiTask-Prefix.pch";
+				INFOPLIST_FILE = "MutiableTask/MultiTask-Info.plist";
+				PRODUCT_NAME = MultiTask;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28DFD9B318D98E07002940EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MutiableTask/MultiTask-Prefix.pch";
+				INFOPLIST_FILE = "MutiableTask/MultiTask-Info.plist";
+				PRODUCT_NAME = MultiTask;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		28DFD9B518D98E07002940EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MutiableTask.app/MutiableTask";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MutiableTask/MutiableTask-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MutiableTaskTests/MultiTaskTests-Info.plist";
+				PRODUCT_NAME = MultiTaskTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		28DFD9B618D98E07002940EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MutiableTask.app/MutiableTask";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MutiableTask/MutiableTask-Prefix.pch";
+				INFOPLIST_FILE = "MutiableTaskTests/MultiTaskTests-Info.plist";
+				PRODUCT_NAME = MultiTaskTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DFD98018D98E06002940EB /* Build configuration list for PBXProject "MultiTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DFD9AF18D98E07002940EB /* Debug */,
+				28DFD9B018D98E07002940EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DFD9B118D98E07002940EB /* Build configuration list for PBXNativeTarget "MultiTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DFD9B218D98E07002940EB /* Debug */,
+				28DFD9B318D98E07002940EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28DFD9B418D98E07002940EB /* Build configuration list for PBXNativeTarget "MultiTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DFD9B518D98E07002940EB /* Debug */,
+				28DFD9B618D98E07002940EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28DFD97D18D98E06002940EB /* Project object */;
+}
