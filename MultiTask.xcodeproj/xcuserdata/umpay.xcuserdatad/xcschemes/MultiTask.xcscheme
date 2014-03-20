@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28DFD98418D98E06002940EB"
-               BuildableName = "MutiableTask.app"
+               BuildableName = "MultiTask.app"
                BlueprintName = "MultiTask"
                ReferencedContainer = "container:MultiTask.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28DFD99F18D98E06002940EB"
-               BuildableName = "MutiableTaskTests.xctest"
+               BuildableName = "MultiTaskTests.xctest"
                BlueprintName = "MultiTaskTests"
                ReferencedContainer = "container:MultiTask.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28DFD98418D98E06002940EB"
-            BuildableName = "MutiableTask.app"
+            BuildableName = "MultiTask.app"
             BlueprintName = "MultiTask"
             ReferencedContainer = "container:MultiTask.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28DFD98418D98E06002940EB"
-            BuildableName = "MutiableTask.app"
+            BuildableName = "MultiTask.app"
             BlueprintName = "MultiTask"
             ReferencedContainer = "container:MultiTask.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28DFD98418D98E06002940EB"
-            BuildableName = "MutiableTask.app"
+            BuildableName = "MultiTask.app"
             BlueprintName = "MultiTask"
             ReferencedContainer = "container:MultiTask.xcodeproj">
          </BuildableReference>

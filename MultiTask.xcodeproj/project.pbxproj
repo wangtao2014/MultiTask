@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A9625C18DA91C2003A301D /* PerformSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A9625B18DA91C2003A301D /* PerformSelectorViewController.m */; };
 		28DFD98918D98E06002940EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98818D98E06002940EB /* Foundation.framework */; };
 		28DFD98B18D98E06002940EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98A18D98E06002940EB /* CoreGraphics.framework */; };
 		28DFD98D18D98E06002940EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DFD98C18D98E06002940EB /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A9625A18DA91C2003A301D /* PerformSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformSelectorViewController.h; sourceTree = "<group>"; };
+		28A9625B18DA91C2003A301D /* PerformSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformSelectorViewController.m; sourceTree = "<group>"; };
 		28DFD98518D98E06002940EB /* MultiTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DFD98818D98E06002940EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28DFD98A18D98E06002940EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,8 @@
 				28DFD9BB18D98E1F002940EB /* OperationViewController.m */,
 				28DFD9BD18D98E2B002940EB /* GCDViewController.h */,
 				28DFD9BE18D98E2B002940EB /* GCDViewController.m */,
+				28A9625A18DA91C2003A301D /* PerformSelectorViewController.h */,
+				28A9625B18DA91C2003A301D /* PerformSelectorViewController.m */,
 			);
 			name = MultiTask;
 			path = MutiableTask;
@@ -259,6 +264,7 @@
 				28DFD9BC18D98E1F002940EB /* OperationViewController.m in Sources */,
 				28DFD9B918D98E15002940EB /* ThreadViewController.m in Sources */,
 				28DFD99918D98E06002940EB /* AppDelegate.m in Sources */,
+				28A9625C18DA91C2003A301D /* PerformSelectorViewController.m in Sources */,
 				28DFD9BF18D98E2B002940EB /* GCDViewController.m in Sources */,
 				28DFD99518D98E06002940EB /* main.m in Sources */,
 			);
@@ -457,6 +463,7 @@
 				28DFD9B318D98E07002940EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28DFD9B418D98E07002940EB /* Build configuration list for PBXNativeTarget "MultiTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				28DFD9B618D98E07002940EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

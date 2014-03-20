@@ -39,15 +39,51 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exitThread:) name:NSThreadWillExitNotification object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becomeMultiThread:) name:NSWillBecomeMultiThreadedNotification object:nil];
+    
     NSLog(@"currentThread=%@", [NSThread currentThread]);
     // Initializing an NSThread Object
     NSThread *secThread = [[NSThread alloc] initWithTarget:self selector:@selector(handle:) object:@"hello"];
     // start an NSThread Object
     [secThread start];
     
+//    [NSThread sleepForTimeInterval:3];
+    
     // Initializing + start an NSThread Object
     [NSThread detachNewThreadSelector:@selector(handle:) toTarget:self withObject:@"third"];
     
+    // If this thread is the first thread detached in the application,包括initWithTarget和detachNewThreadSelector，post NSWillBecomeMultiThreadedNotification通知
+    // 判断是否是主线程的两种方法
+    NSLog(@"isMainThread1=%d", [NSThread isMainThread]);
+    NSLog(@"isMainThread2=%d", [[NSThread currentThread] isMainThread]);
+    
+    // 判断是否是多线程
+    NSLog(@"isMutiThread=%d", [NSThread isMultiThreaded]);
+    
+    // 获取方法调用堆栈地址信息
+    NSLog(@"callStack=%@", [NSThread callStackReturnAddresses]);
+    NSLog(@"callStack count=%d", [NSThread callStackReturnAddresses].count);
+    // 获取方法调用堆栈信息
+    NSLog(@"callStackSymbols=%@", [NSThread callStackSymbols]);
+    
+    // Working with Thread Properties
+    // threadDictionary
+    // http://qing.blog.sina.com.cn/tj/59b1e9c833004cqc.html
+    NSMutableDictionary *dic = [[NSThread currentThread] threadDictionary];
+    [dic setObject:@"hello" forKey:@"hello"];
+    NSLog(@"mainThread threadDictionary=%@", [[NSThread currentThread] threadDictionary]);
+    
+    // name
+    [[NSThread currentThread] setName:@"main"];
+    NSLog(@"main thread name=%@", [[NSThread currentThread] name]);
+    
+    // stackSize
+    NSLog(@"stackSize=%d", [[NSThread currentThread] stackSize]);
+    
+    // Working with Thread Priorities
+    NSLog(@"thread priority=%.2f", [NSThread threadPriority]);
+    NSLog(@"thread priority=%.2f", [[NSThread currentThread] threadPriority]);
+    // setThreadPriority
     NSLog(@"nihaoms");
 }
 
@@ -56,23 +92,41 @@
     NSLog(@"NSThreadWillExitNotification");
 }
 
+- (void)becomeMultiThread:(NSNotification *)notification
+{
+    NSLog(@"NSWillBecomeMultiThreadedNotification");
+}
+
 - (void)handle:(NSString *)param
 {
     NSLog(@"param=%@", param);
     NSLog(@"thread=%@", [NSThread currentThread]);
     
+    NSLog(@"isMainThreadHandle=%d", [NSThread isMainThread]);
+    NSLog(@"isMainThreadHandle=%d", [[NSThread currentThread] isMainThread]);
+    
+    // threadDictionary
+    NSLog(@"other threadDictionary=%@", [[NSThread currentThread] threadDictionary]);
+    
+    // 获取主线程
+    NSLog(@"mainThread=%@", [NSThread mainThread]);
+    
     if ([param isEqualToString:@"third"]) {
         // Stopping a Thread
         [NSThread sleepForTimeInterval:3];
-        [NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:3]];
+        //[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:3]];
         // Invoking this method should be avoided as it does not give your thread a chance to clean up any resources it allocated during its execution.
         // Terminates the current thread
         
-        if ([[NSThread currentThread] isCancelled]) {
+        NSLog(@"isExecuting=%d", [[NSThread currentThread] isExecuting]);
+        
+        if (![[NSThread currentThread] isCancelled]) {
             // [[NSThread currentThread] cancel]
             // Changes the cancelled state of the receiver to indicate that it should exit.
-            [NSThread exit];
+            [NSThread exit];// 后面代码不会执行 post NSThreadWillExitNotification通知
         }
+        NSLog(@"isCancelled=%d", [[NSThread currentThread] isCancelled]);
+        NSLog(@"isFinished=%d", [[NSThread currentThread] isFinished]);
         
         NSLog(@"sleep");
     }

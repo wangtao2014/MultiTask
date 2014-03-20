@@ -10,6 +10,7 @@
 #import "ThreadViewController.h"
 #import "OperationViewController.h"
 #import "GCDViewController.h"
+#import "PerformSelectorViewController.h"
 
 @implementation AppDelegate
 
@@ -23,11 +24,13 @@
     ThreadViewController *threadController = [[ThreadViewController alloc] init];
     OperationViewController *operController = [[OperationViewController alloc] init];
     GCDViewController *gcdController = [[GCDViewController alloc] init];
+    PerformSelectorViewController *performController = [[PerformSelectorViewController alloc] init];
     
     threadController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Thread" image:[UIImage imageNamed:@"Thread"] tag:0];
     operController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Operation" image:[UIImage imageNamed:@"Opera"] tag:0];
     gcdController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"GCD" image:[UIImage imageNamed:@"Thread"] tag:0];
-    tabBarController.viewControllers = @[threadController, operController, gcdController];
+    performController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Perform" image:[UIImage imageNamed:@"Opera"] tag:0];
+    tabBarController.viewControllers = @[threadController,performController, operController, gcdController];
     self.window.rootViewController = tabBarController;
     
     return YES;
